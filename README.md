@@ -51,4 +51,4 @@ include_recipe 'elk_logstash::default'
 
 ## License and Authors
 
-Author:: The Authors (you@example.com)
+Author:: EverTrue, inc (devops@evertrue.com)

@@ -2,7 +2,7 @@
 # Cookbook Name:: elk_logstash
 # Spec:: default
 #
-# Copyright (c) 2015 The Authors, All Rights Reserved.
+# Copyright (c) 2015 EverTrue, inc, All Rights Reserved.
 
 require 'spec_helper'
 

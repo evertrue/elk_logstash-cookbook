@@ -9,4 +9,4 @@
 
 ## License and Authors
 
-Author:: The Authors (you@example.com)
+Author:: EverTrue, inc (devops@evertrue.com)

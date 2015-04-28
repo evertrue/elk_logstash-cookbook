@@ -1,9 +1,11 @@
-name             'elk_logstash'
-maintainer       'The Authors'
-maintainer_email 'you@example.com'
-license          'all_rights'
-description      'Installs/Configures elk_logstash'
-long_description 'Installs/Configures elk_logstash'
-version          '0.0.1'
+name 'elk_logstash'
+maintainer 'EverTrue, inc'
+maintainer_email 'devops@evertrue.com'
+license 'apache2'
+description 'Intalls and Configures a Logstash Agent'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version '0.0.1'
 
 supports 'ubuntu', '>= 12.04'
+
+depends 'logstash', '~> 0.11'
