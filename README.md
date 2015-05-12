@@ -24,6 +24,29 @@ Short Description
         - which includes `elk_logstash::another`
     * `elk_logstash::configure`
 
+
+## Stuffs you need to do
+
+Set the following attributes if you are using the configure recipe. see http://logstash.net/docs/1.4.2/inputs/lumberjack
+
+```
+node['elk_logstash']['server']['lumberjack']['ssl certificate'],
+node['elk_logstash']['server']['lumberjack']['ssl key'],
+node['elk_logstash']['server']['lumberjack']['host'],
+node['elk_logstash']['server']['lumberjack']['port'],
+```
+
+And any ES settings you need http://logstash.net/docs/1.4.2/outputs/elasticsearch
+
+```
+node['elk_logstash']['server']['elasticsearch']['elasticsearch_ip'],
+node['elk_logstash']['server']['elasticsearch']['elasticsearch_cluster'],
+node['elk_logstash']['server']['elasticsearch']['elasticsearch_embedded'],
+node['elk_logstash']['server']['elasticsearch']['bind_host'],
+node['elk_logstash']['server']['elasticsearch']['es_index'],
+node['elk_logstash']['server']['elasticsearch']['elasticsearch_protocol'],
+```
+
 ## install
 
 More info about the install recipe
