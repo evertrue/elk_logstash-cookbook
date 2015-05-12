@@ -1,0 +1,6 @@
+default['elk_logstash']['certs']['certificate_data_bag'] = 'certificates'
+default['elk_logstash']['certs']['certificate_data_bag_item'] = 'logstash'
+default['elk_logstash']['certs']['certificate_data_bag_item_key'] = 'server certificate'
+default['elk_logstash']['certs']['key_data_bag'] = 'certificates'
+default['elk_logstash']['certs']['key_data_bag_item'] = 'logstash'
+default['elk_logstash']['certs']['key_data_bag_item_key'] = 'server key'
