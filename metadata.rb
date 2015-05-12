@@ -9,3 +9,5 @@ version '0.0.1'
 supports 'ubuntu', '>= 12.04'
 
 depends 'logstash', '~> 0.11'
+depends 'apt'
+depends 'java'
