@@ -1,6 +1,8 @@
 ---
 driver:
   name: vagrant
+  network:
+    - [ 'private_network', {ip: '192.168.33.10'}]
 
 provisioner:
   name: chef_zero
@@ -12,5 +14,11 @@ platforms:
 suites:
   - name: default
     run_list:
+      - recipe[elk_logstash::certs]
       - recipe[elk_logstash::default]
+      - recipe[elk_logstash::configure]
     attributes:
+      elk_logstash:
+        server:
+          elasticsearch:
+            host: 192.168.33.12
