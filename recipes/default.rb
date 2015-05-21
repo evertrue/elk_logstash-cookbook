@@ -10,4 +10,38 @@ include_recipe 'runit'
 
 node.set['elk_logstash']['server']['lumberjack']['host'] = '0.0.0.0'
 
-include_recipe 'logstash::server'
+name = 'server'
+
+logstash_instance name do
+  action :create
+end
+
+logstash_service name do
+  action [:enable]
+  method 'native'
+end
+
+logstash_config name do
+  action [:create]
+  notifies :restart, "logstash_service[#{name}]"
+end
+# ^ see `.kitchen.yml` for example attributes to configure templates.
+
+logstash_plugins 'contrib' do
+  instance name
+  action [:create]
+end
+
+logstash_pattern name do
+  action [:create]
+end
+
+logstash_curator name do
+  action [:create]
+end
+
+file node['elk_logstash']['server']['file']['path'] do
+  action :create_if_missing
+  owner node['logstash']['instance_default']['user']
+  group node['logstash']['instance_default']['group']
+end
