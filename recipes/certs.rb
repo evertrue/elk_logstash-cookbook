@@ -13,5 +13,6 @@
   file node['elk_logstash']['server']['lumberjack']["ssl #{c}"] do
     content ssl_thing
     sensitive true
+    notifies :restart, 'logstash_service[server]'
   end
 end
