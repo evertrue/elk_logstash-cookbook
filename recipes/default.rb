@@ -6,6 +6,7 @@
 
 include_recipe 'apt'
 include_recipe 'java'
+include_recipe 'runit'
 
 node.set['elk_logstash']['server']['lumberjack']['host'] = '0.0.0.0'
 
