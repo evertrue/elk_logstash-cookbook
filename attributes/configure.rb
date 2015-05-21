@@ -1,6 +1,6 @@
 default['elk_logstash']['server']['elasticsearch']['host'] = ''
 default['elk_logstash']['server']['elasticsearch']['port'] = ''
-default['elk_logstash']['server']['elasticsearch']['cluster'] = 'elasticsearch'
+default['elk_logstash']['server']['elasticsearch']['cluster'] = "#{node.chef_environment}-elk"
 default['elk_logstash']['server']['elasticsearch']['embedded'] = false
 default['elk_logstash']['server']['elasticsearch']['bind_host'] = ''
 default['elk_logstash']['server']['elasticsearch']['index'] = ''
