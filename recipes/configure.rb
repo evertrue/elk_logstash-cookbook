@@ -5,6 +5,13 @@ logstash_config 'lumberjack input' do
   variables node['elk_logstash']['server']
 end
 
+logstash_config 'syslog filter' do
+  templates_cookbook 'elk_logstash'
+  templates 'filter_syslog' => 'filter_syslog.conf.erb'
+  instance 'server'
+  variables node['elk_logstash']['server']
+end
+
 logstash_config 'elasticsearch output' do
   templates_cookbook 'elk_logstash'
   templates 'output_elasticsearch' => 'output_elasticsearch.conf.erb'
