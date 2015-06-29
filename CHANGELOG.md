@@ -4,26 +4,22 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 ### Changed
-- Improve argument against commit logs.
 
-## [0.0.2] - YYY-MM-DD
+## [0.0.2] - 2015-06-29
 ### Added
-- Explanation of the recommended reverse chronological release ordering.
+- Install runit
+- replace the `logstash::server` recipe with more configurable LWRP calls
+- Restart Logstash when certificates change
+- ChefSpec
 
 ### Changed
-- Refer to a "change log" instead of a "CHANGELOG" throughout the site
-to differentiate between the file and the purpose of the file — the
-logging of changes.
 
 ### Removed
-- Remove empty sections from CHANGELOG, they occupy too much space and
-create too much noise in the file. People will have to assume that the
-missing sections were intentionally left out because they contained no
-notable changes.
+- The entire configure recipe as it does not belong in this cookbook
 
 ## 0.0.1 - 2015-05-12
 ### Added
-- Initial Testing Release
+- Initial Release
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.8...HEAD
-[0.0.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.0.2
+[unreleased]: https://github.com/evertrue/elk_logstash-cookbook/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/evertrue/elk_logstash-cookbook/compare/v0.0.1...v0.0.2
