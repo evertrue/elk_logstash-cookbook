@@ -39,9 +39,3 @@ end
 logstash_curator name do
   action [:create]
 end
-
-file node['elk_logstash']['server']['file']['path'] do
-  action :create_if_missing
-  owner node['logstash']['instance_default']['user']
-  group node['logstash']['instance_default']['group']
-end
