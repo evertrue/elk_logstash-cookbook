@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased][unreleased]
 ### Changed
 
+## [0.0.3] - 2015-06-29
+### Changed
+- Fix namespace issue
+
 ## [0.0.2] - 2015-06-29
 ### Added
 - Install runit
