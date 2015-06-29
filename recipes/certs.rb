@@ -10,7 +10,7 @@
 
   fail "Need SSL #{c} couldn't find it" if ssl_thing.nil? || ssl_thing.empty?
 
-  file node['elk_logstash']['server']['lumberjack']["ssl #{c}"] do
+  file node['elk']['server']['lumberjack']["ssl #{c}"] do
     content ssl_thing
     sensitive true
     notifies :restart, 'logstash_service[server]'
