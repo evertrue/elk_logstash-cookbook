@@ -4,7 +4,7 @@
     node['elk_logstash']['certs']["#{c}_data_bag_item"]
   )[node['elk_logstash']['certs']["#{c}_data_bag_item_key"]]
 
-  directory File.dirname(node['elk_logstash']['server']['lumberjack']["ssl #{c}"]) do
+  directory File.dirname(node['elk']['server']['lumberjack']["ssl #{c}"]) do
     recursive true
   end
 
