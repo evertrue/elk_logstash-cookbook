@@ -20,41 +20,11 @@ Installs and sets up a Logstash agent
 1. Installs java and runit
 2. Installs Logstash and sets up configuration, plugins, and a service
 
-## configure
-
-Configures Logstash with some opinionated defaults like:
-  * a lumberjack input
-  * an elasticsearch output
-
-
-### Stuff you need to do if you use the configure recipe
-
-Set the following attributes if you are using the configure recipe. see [the lumberjack docs](http://logstash.net/docs/1.4.2/inputs/lumberjack)
-
-```
-node['elk_logstash']['server']['lumberjack']['ssl certificate'],
-node['elk_logstash']['server']['lumberjack']['ssl key'],
-node['elk_logstash']['server']['lumberjack']['host'],
-node['elk_logstash']['server']['lumberjack']['port'],
-```
-
-And any ES settings you need [](http://logstash.net/docs/1.4.2/outputs/elasticsearch)
-
-```
-node['elk_logstash']['server']['elasticsearch']['elasticsearch_ip'],
-node['elk_logstash']['server']['elasticsearch']['elasticsearch_cluster'],
-node['elk_logstash']['server']['elasticsearch']['elasticsearch_embedded'],
-node['elk_logstash']['server']['elasticsearch']['bind_host'],
-node['elk_logstash']['server']['elasticsearch']['es_index'],
-node['elk_logstash']['server']['elasticsearch']['elasticsearch_protocol'],
-```
-
 ## certs
 
 Pulls server cert, and server keys out of a data bag
 
 1. see the `[attributes/certs.rb](https://github.com/evertrue/elk_logstash-cookbook/blob/master/attributes/certs.rb)` for more info
-
 
 # Usage
 
