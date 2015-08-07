@@ -35,7 +35,3 @@ end
 logstash_pattern name do
   action [:create]
 end
-
-logstash_curator name do
-  action [:create]
-end
