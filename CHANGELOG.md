@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 ## [0.0.3] - 2015-06-29
+## Added
+- Added Version pins for all dependencies
+
+## [0.0.3] - 2015-06-29
 ### Changed
 - Fix namespace issue
 

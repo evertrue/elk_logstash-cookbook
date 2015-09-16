@@ -4,7 +4,7 @@ maintainer_email 'devops@evertrue.com'
 license 'apache2'
 description 'Intalls and Configures a Logstash Agent'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '0.0.3'
+version '1.0.0'
 
 supports 'ubuntu', '>= 12.04'
 
