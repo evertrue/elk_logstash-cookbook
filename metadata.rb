@@ -10,5 +10,5 @@ supports 'ubuntu', '>= 12.04'
 
 depends 'logstash', '~> 0.11'
 depends 'apt', '~> 2.0'
-depends 'java', '~> 1.0.0'
+depends 'java', '~> 1.0'
 depends 'runit', '~> 1.5'
