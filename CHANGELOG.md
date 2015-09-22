@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased][unreleased]
 ### Changed
 
+## [1.1.1] - 2015-09-21
+## Added
+- Reduced version pin on logstash to 0.12.0 instead of 0.12.1
+
 ## [1.1.0] - 2015-09-21
 ## Added
 - Add logstash-filter-alter
