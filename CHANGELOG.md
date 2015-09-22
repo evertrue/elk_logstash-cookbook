@@ -5,6 +5,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased][unreleased]
 ### Changed
 
+## [1.1.0] - 2015-09-21
+## Added
+- Add logstash-filter-alter
+- Add more restrictive pin on logstash cookbook
+
+
+## [1.0.0] - 2015-08-18
+## Added
+- Fixup version pins on dep cookbooks
+
 ## [0.0.3] - 2015-06-29
 ## Added
 - Added Version pins for all dependencies
