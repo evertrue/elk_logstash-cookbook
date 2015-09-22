@@ -8,7 +8,7 @@ version '1.1.0'
 
 supports 'ubuntu', '>= 12.04'
 
-depends 'logstash', '~> 0.12.1'
+depends 'logstash', '~> 0.12.0'
 depends 'apt', '~> 2.0'
 depends 'java', '~> 1.0'
 depends 'runit', '~> 1.5'
