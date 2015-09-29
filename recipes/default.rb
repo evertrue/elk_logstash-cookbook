@@ -27,10 +27,13 @@ logstash_config name do
 end
 # ^ see `.kitchen.yml` for example attributes to configure templates.
 
-logstash_plugins 'logstash-filter-alter' do
-  instance name
-  action [:create]
+node['elk_logstash']['plugins'].each do |plugin|
+  logstash_plugins plugin do
+    instance name
+    action [:create]
+  end
 end
+
 
 logstash_pattern name do
   action [:create]
