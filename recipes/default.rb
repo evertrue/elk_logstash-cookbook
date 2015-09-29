@@ -27,14 +27,9 @@ logstash_config name do
 end
 # ^ see `.kitchen.yml` for example attributes to configure templates.
 
-%w(
-  contrib
-  logstash-filter-alter
-).each do |plugin|
-  logstash_plugins plugin do
-    instance name
-    action [:create]
-  end
+logstash_plugins 'logstash-filter-alter' do
+  instance name
+  action [:create]
 end
 
 logstash_pattern name do
