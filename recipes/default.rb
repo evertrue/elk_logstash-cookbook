@@ -34,7 +34,6 @@ node['elk_logstash']['plugins'].each do |plugin|
   end
 end
 
-
 logstash_pattern name do
   action [:create]
 end
