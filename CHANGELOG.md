@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased][unreleased]
 ### Changed
 
+## [1.2.1] - 2015-10-08
+## Changed
+- Add guard to prevent plugin from being repeatedly installed.  This is a hotfix that should be ported to the `logstash` cookbook itself
+
+
 ## [1.2.0] - 2015-09-30
 ## Changed
 - Added simple attribute `['elk_logstash']['plugins']` to install all plugins with
