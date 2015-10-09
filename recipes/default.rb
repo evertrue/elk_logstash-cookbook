@@ -31,6 +31,7 @@ node['elk_logstash']['plugins'].each do |plugin|
   logstash_plugins plugin do
     instance name
     action [:create]
+    not_if "#{node['logstash']['instance_default']['basedir']}/#{name}/bin/plugin list | grep #{plugin}"
   end
 end
 
