@@ -1,3 +1,7 @@
+# THIS COOKBOOK IS DEPRECATED
+
+## This cookbook (elk_logstash) is deprecated. Please use et_elk instead.
+
 # elk_logstash
 
 [![Build Status](https://travis-ci.org/evertrue/elk_logstash-cookbook.svg)](https://travis-ci.org/evertrue/elk_logstash-cookbook)

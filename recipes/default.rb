@@ -4,6 +4,8 @@
 #
 # Copyright (c) 2015 EverTrue, inc, All Rights Reserved.
 
+Chef::Log.warn('This cookbook (elk_logstash) is deprecated. Please use et_elk instead.')
+
 include_recipe 'apt'
 include_recipe 'java'
 include_recipe 'runit'
